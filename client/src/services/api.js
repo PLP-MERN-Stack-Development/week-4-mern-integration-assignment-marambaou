@@ -85,6 +85,20 @@ export const postService = {
     const response = await api.get(`/posts/search?q=${query}`);
     return response.data;
   },
+
+  // Get comments for a post
+  getPostComments: async (postId) => {
+    const response = await api.get(`/posts/${postId}/comments`);
+    return response.data;
+  },
+
+  // Upload a featured image
+  uploadImage: async (formData) => {
+    const response = await api.post('/posts/upload', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    });
+    return response.data;
+  },
 };
 
 // Category API services

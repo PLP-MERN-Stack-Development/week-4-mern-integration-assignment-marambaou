@@ -1,0 +1,8 @@
+{
+	"dependencies": {
+		"cors": "^2.8.5",
+		"jsonwebtoken": "^9.0.2",
+		"multer": "^2.0.1",
+		"react-router-dom": "^7.6.3"
+	}
+}
